@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/now-ui-dashboard-react/static/css/main.6d94e8dc.chunk.css",
+    "main.js": "/now-ui-dashboard-react/static/js/main.736eaa37.chunk.js",
+    "main.js.map": "/now-ui-dashboard-react/static/js/main.736eaa37.chunk.js.map",
+    "runtime~main.js": "/now-ui-dashboard-react/static/js/runtime~main.6231c9ca.js",
+    "runtime~main.js.map": "/now-ui-dashboard-react/static/js/runtime~main.6231c9ca.js.map",
+    "static/css/2.0cee8fd6.chunk.css": "/now-ui-dashboard-react/static/css/2.0cee8fd6.chunk.css",
+    "static/js/2.28de9cfd.chunk.js": "/now-ui-dashboard-react/static/js/2.28de9cfd.chunk.js",
+    "static/js/2.28de9cfd.chunk.js.map": "/now-ui-dashboard-react/static/js/2.28de9cfd.chunk.js.map",
+    "index.html": "/now-ui-dashboard-react/index.html",
+    "precache-manifest.625d18a2e7ecd6e33adbc3979e0498a7.js": "/now-ui-dashboard-react/precache-manifest.625d18a2e7ecd6e33adbc3979e0498a7.js",
+    "service-worker.js": "/now-ui-dashboard-react/service-worker.js",
+    "static/css/2.0cee8fd6.chunk.css.map": "/now-ui-dashboard-react/static/css/2.0cee8fd6.chunk.css.map",
+    "static/css/main.6d94e8dc.chunk.css.map": "/now-ui-dashboard-react/static/css/main.6d94e8dc.chunk.css.map",
+    "static/media/logo-white.svg": "/now-ui-dashboard-react/static/media/logo-white.eec7c7f6.svg",
+    "static/media/now-ui-dashboard.css": "/now-ui-dashboard-react/static/media/nucleo-outline.8ebec31f.woff2"
+  }
+}
