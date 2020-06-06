@@ -34,7 +34,7 @@ var ps;
 
 class Dashboard extends React.Component {
   state = {
-    backgroundColor: "blue"
+    backgroundColor: "silver"
   };
   mainPanel = React.createRef();
   componentDidMount() {
@@ -80,12 +80,9 @@ class Dashboard extends React.Component {
             })}
             <Redirect from="/admin" to="/admin/dashboard" />
           </Switch>
-          <Footer fluid />
+          
         </div>
-        <FixedPlugin
-          bgColor={this.state.backgroundColor}
-          handleColorClick={this.handleColorClick}
-        />
+
       </div>
     );
   }

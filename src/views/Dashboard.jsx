@@ -18,9 +18,10 @@
 import React from "react";
 // react plugin used to create charts
 import { Line, Bar } from "react-chartjs-2";
-
+import ReadMoreReact from 'read-more-react';
 // reactstrap components
 import {
+  Progress,
   Card,
   CardHeader,
   CardBody,
@@ -36,6 +37,7 @@ import {
   Button,
   Label,
   FormGroup,
+  Form,
   Input,
   UncontrolledTooltip
 } from "reactstrap";
@@ -55,15 +57,167 @@ class Dashboard extends React.Component {
     return (
       <>
         <PanelHeader
-          size="lg"
-          content={
-            <Line
-              data={dashboardPanelChart.data}
-              options={dashboardPanelChart.options}
-            />
-          }
+          size="sm"
+        // content={
+        //   <Line
+        //     data={dashboardPanelChart.data}
+        //     options={dashboardPanelChart.options}
+        //   />
+        // }
         />
         <div className="content">
+          <Row>
+            <Col md={1}>
+            </Col>
+            <Col md={10}>
+              <h6 className="card-category" style={{ fontWeight: "bold", color: "black" }}>Write Story Here</h6>
+              <Card className="card-chart" style={{ borderRadius: "10px" }}>
+                <CardBody>
+                  <Row>
+                    <Col md={11}></Col>
+                    <Col md={1}><i className="fa fa-cog" style={{ fontSize: "20px" }} aria-hidden="true"></i></Col>
+                  </Row>
+                  <Row>
+                    <Form>
+                      <Row style={{ marginBottom: "10px" }}>
+                        <Col md={1}></Col>
+                        <Col className="pr-1" md={10}>
+                          {/* <FormGroup> */}
+                          <input
+                            className="custom-form"
+                            placeholder="Enter Your Title"
+                            type="text"
+                            style={{ height: "44px", width: "515px" }}
+
+                          />
+                          {/* </FormGroup> */}
+                        </Col>
+                        <Col md={1}></Col>
+                      </Row>
+
+                      <Row>
+                        <Col md={1}></Col>
+
+                        <Col md={10}>
+                          {/* <FormGroup> */}
+                          <textarea
+                            className="custom-form"
+                            cols="85"
+                            placeholder="Here can be your description"
+                            rows="4"
+                            name="text"
+                            id="exampleText"
+
+                          ></textarea>
+
+                          {/* </FormGroup> */}
+                        </Col>
+                        <Col md={1}></Col>
+
+                      </Row>
+                      <Row>
+                        <Col md={1}></Col>
+                        <Col md={4}>
+                          <select style={{ width: "162px" }} className="custom-form">
+                            <option value="" disabled selected hidden>Select categories</option>
+                          </select>
+                        </Col>
+                        <Col md={3}>
+                          <input
+                            className="custom-form"
+                            placeholder="Enter Your Title"
+                            type="text"
+                            style={{ height: "44px", marginLeft: "-32px" }}
+                          />
+                        </Col>
+                        <Col md={1}></Col>
+                        <Col md={2}>
+                          <Button style={{ marginTop: "-1px", width: "110px", marginLeft: "-30px", borderRadius: "12px", height: "44px" }} color="warning">Post Story</Button>
+                        </Col>
+                        <Col md={1}></Col>
+                      </Row>
+                    </Form>
+                  </Row>
+                </CardBody>
+              </Card>
+            </Col>
+            <Col md={1}>
+            </Col>
+          </Row>
+          <Row>
+            <Col md={1}>
+            </Col>
+            {[{ back: "#FFF3F3", font: "#FF7F7F" }, { back: "#F3F9FF", font: "#70B7FF" }].map((element, i) => (
+              <Col md={5}>
+                <Card className="card-chart" style={{ borderRadius: "10px", backgroundColor: `${element.back}` }}>
+                  <CardBody>
+                    <Row>
+                      <Col md={6}><h5 style={{ fontWeight: "bolder" }}>Title of Card</h5></Col>
+                      <Col md={6}><h5 style={{ float: "right" }}>Title of Card</h5></Col>
+                    </Row>
+                    <Row>
+                      <Col md={6}><h5 style={{ fontWeight: "bolder" }}>Title of Card</h5></Col>
+                      <Col md={6}><h5 style={{ float: "right" }}></h5></Col>
+                    </Row>
+                    <Row>
+                      <Col md={12}>
+                        <ReadMoreReact text={
+                          " Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+                        }
+                          readMoreText={
+                            <b style={{ color: `${element.font}` }}>Read More..</b>
+                          } />
+                        <p>
+
+
+                        </p></Col>
+
+                    </Row>
+                    <Row>
+                      <Col md={10}>
+                        <div className="text-left">Fund Needed</div>
+                        <Progress color={i ? null : "danger"} value="25" />
+                      </Col>
+                      <Col md={2}>
+                        <div style={{ marginTop: "14px", fontWeight: "bold", fontSize: "20px", color: `${element.font}` }}>25%</div>
+
+                      </Col>
+                    </Row>
+                  </CardBody>
+                  <CardFooter>
+                    <Row>
+                      <Col md={1}></Col>
+                      <Col md={3}>
+                        <i class="fa fa-heart" style={{ color: `${element.font}` }} aria-hidden="true"></i><span style={{ color: `${element.font}` }}>256</span><span>likes</span>
+                      </Col>
+                      <Col md={4}>
+                        <i class="fa fa-comment" style={{ color: `${element.font}` }} aria-hidden="true"></i><span>256</span><span style={{ color: `${element.font}` }}>comment</span>
+                      </Col>
+                      <Col md={3}>
+                        <i class="fa fa-share" style={{ color: `${element.font}` }} aria-hidden="true"></i><span style={{ color: `${element.font}` }}>256</span><span>share</span>
+                      </Col>
+                      <Col md={1}></Col>
+
+                    </Row>
+                  </CardFooter>
+                </Card>
+              </Col>
+
+            ))}
+
+
+
+
+
+
+            <Col md={1}>
+            </Col>
+          </Row>
+
+
+        </div>
+
+        {/* <div className="content">
           <Row>
             <Col xs={12} md={4}>
               <Card className="card-chart">
@@ -371,9 +525,9 @@ class Dashboard extends React.Component {
                   </Table>
                 </CardBody>
               </Card>
-            </Col>
+            </Col> 
           </Row>
-        </div>
+        </div>*/}
       </>
     );
   }

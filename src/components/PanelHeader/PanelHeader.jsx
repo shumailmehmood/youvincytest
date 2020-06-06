@@ -16,7 +16,7 @@
 
 */
 import React from "react";
-
+import "../../assets/css/now-ui-dashboard.css"
 class PanelHeader extends React.Component {
   render() {
     return (

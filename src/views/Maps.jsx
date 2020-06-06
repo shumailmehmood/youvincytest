@@ -122,31 +122,34 @@ class FullScreenMap extends React.Component {
   render() {
     return (
       <>
-        <PanelHeader size="sm" />
-        <div className="content">
-          <Row>
-            <Col xs={12}>
-              <Card>
-                <CardHeader>Google Maps</CardHeader>
-                <CardBody>
-                  <div
-                    id="map"
-                    className="map"
-                    style={{ position: "relative", overflow: "hidden" }}
-                  >
-                    <MapWrapper
-                      googleMapURL="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"
-                      loadingElement={<div style={{ height: `100%` }} />}
-                      containerElement={<div style={{ height: `100%` }} />}
-                      mapElement={<div style={{ height: `100%` }} />}
-                    />
-                  </div>
-                </CardBody>
-              </Card>
-            </Col>
-          </Row>
-        </div>
+      <center><h1>Not Available</h1></center>
       </>
+      // <>
+      //   <PanelHeader size="sm" />
+      //   <div className="content">
+      //     <Row>
+      //       <Col xs={12}>
+      //         <Card>
+      //           <CardHeader>Google Maps</CardHeader>
+      //           <CardBody>
+      //             <div
+      //               id="map"
+      //               className="map"
+      //               style={{ position: "relative", overflow: "hidden" }}
+      //             >
+      //               <MapWrapper
+      //                 googleMapURL="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"
+      //                 loadingElement={<div style={{ height: `100%` }} />}
+      //                 containerElement={<div style={{ height: `100%` }} />}
+      //                 mapElement={<div style={{ height: `100%` }} />}
+      //               />
+      //             </div>
+      //           </CardBody>
+      //         </Card>
+      //       </Col>
+      //     </Row>
+      //   </div>
+      // </>
     );
   }
 }
